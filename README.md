@@ -8,7 +8,7 @@
 </p>
 
 
-![alt text](http://prntscr.com/qmlcay)
+![alt text](https://github.com/AndreyDmitriew/SailFlatLanding1/blob/master/images/forGitPreview.jpg)
 
 ## Overview 
  The task is to make a graphic visualizer for music. While your favorite MP3 player is playing, a grid of 16x9 squares is visible on the screen, the squares change color and brightness depending on the volume in different parts of the sound spectrum, each square is responsible for its part of the range.
