@@ -1,0 +1,198 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: rgb(242, 242, 242); 
+   } 
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.frame {
+    background-color: white;
+    border:2px solid rgba(151, 109, 109, 0.363);
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 800px;
+    margin: 100px auto;
+}
+
+.firstAnswer {
+    color: black; 
+    text-decoration: none; 
+    user-select: none;
+    background: #fbd601; 
+    padding: .7em 1.5em; 
+    outline: none; 
+    font-family: 'Noto Sans', sans-serif;
+    margin-right: 20px;
+}
+.firstAnswer:hover { background: rgba(255, 207, 16, 0.699); }
+
+.secondAnswer {
+    color: black; 
+    text-decoration: none; 
+    user-select: none; 
+    background: #fbd601; 
+    padding: .7em 1.5em;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+.secondAnswer:hover { background: rgb(255, 207, 16, 0.699); } 
+
+.title{
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+    font-size: 25px;
+    
+}
+
+.Attantion {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.TitleQuestion {
+    color: #fec840dc;
+    font-family: 'Lobster Two', cursive;        
+    font-size: 40px;
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+    padding: 25px 10px 0 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
+}
+
+.buttonWrapper {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.modalwin { 
+    height: 600px;  
+    width: 800px;
+    border:2px solid rgba(151, 109, 109, 0.363);
+    border-radius: 10px;
+    background: #ffc93b;
+    top: 8%; 
+    right: 0;
+    left: 0;
+    font-size: 14px; 
+    margin: 0 auto;
+    z-index:2;
+    display: none;  
+    position: fixed; 
+    padding: 15px;
+}
+#shadow { 
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:1; 
+    background:#ffc93b;
+    opacity: 0.5; 
+    left:0;
+    top:0;
+}
+
+.winnerPic{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.resultFrame {
+    padding: 20px;
+    margin-top: 83px;
+    background: rgb(250, 215, 215);
+    opacity: 0.5; 
+    border:2px solid rgba(151, 109, 109, 0.363);
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    display: table;
+}
+
+
+
+/* media for main screen */
+  @media screen and (max-width: 893px) {
+    .frame {
+        background-color: white;
+        border:2px solid rgba(151, 109, 109, 0.363);
+        border-radius: 10px;
+        margin-top: 100px;
+        width: 500px;
+        margin: 100px auto;
+  }
+}
+
+@media screen and (max-width: 552px) {
+    .frame {
+        background-color: white;
+        border:2px solid rgba(151, 109, 109, 0.363);
+        border-radius: 10px;
+        margin-top: 100px;
+        width: 300px;
+        margin: 100px auto;
+        display: grid;
+        padding-bottom: 20px;
+    }
+    .firstAnswer {
+        width: 290px;
+        margin: 15px auto;
+        font-size: 20px;
+    }
+    .secondAnswer {
+        width: 290px;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+}
+
+
+/* media for fail/win screen 870px */
+@media screen and (max-width: 870px) {
+    .modalwin { 
+        height: 300px;  
+        width: 500px;
+    }
+    .winnerPic{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 30px;
+    }
+    .resultFrame {
+        font-size: 20px;
+    }
+  }
+
+
+  /* media for fail/win screen 570px */
+@media screen and (max-width: 570px) {
+    .modalwin { 
+        height: 400px;  
+        width: 300px;
+    }
+    .winnerPic{
+        height: 200px;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    .resultFrame {
+        font-size: 25px;
+    }
+  }
